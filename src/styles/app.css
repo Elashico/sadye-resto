@@ -64,3 +64,8 @@ hr{
         margin-top: 2vh;
     }
 }
+@media (max-width: 420px){
+    .popular-foods{
+        margin-top: -15vh;
+    }
+}
