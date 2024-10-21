@@ -37,7 +37,7 @@ hr{
 }
 
 /* Media Queries for Smaller Screens */
-@media (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px){
     .popular-foods {
         padding: 0 8%;
         margin-top: -17vh;

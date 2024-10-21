@@ -119,4 +119,9 @@
         display:none;
     }
 }
+@media (max-width: 420px){
+    .text-container h2, .text-container ul li {
+      font-size: 1rem;
+    }
+  }
 

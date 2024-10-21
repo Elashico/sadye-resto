@@ -109,6 +109,7 @@ header .btn-style{
   }
   #baby-come-back{
     display: block;
+    font-size: 1rem;
   }
   .fa-icon{
     display: block;
@@ -121,6 +122,17 @@ header .btn-style{
   }
   #baby-come-back{
     display: block;
+  }
+
+  /* phone view */
+  .logo-header img{
+    height: 3rem;
+  }
+  .logo-header h1{
+    font-size: 1.5rem;
+    width: auto;
+    margin-left: 1vw;
+    color: var(--lighter);
   }
   
 }
