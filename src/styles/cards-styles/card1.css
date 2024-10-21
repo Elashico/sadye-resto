@@ -1,0 +1,81 @@
+.card-1 {
+    padding: 8% 10%;
+    width: 20vw;
+    min-width: 250px;
+    max-height: 280px;
+    min-height: 260px;
+    background-color: var(--lighter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card-1:hover {
+    transform: scale(1.05); 
+    background-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.card-1 .img-container {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+}
+
+.card-1 h3 {
+    color: var(--primary-color-dark);
+}
+
+/* Ensure the image inside the container doesn't get stretched */
+.img-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for image hover */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Image hover animation */
+.card-1:hover .img-container img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px){
+    .card-1{
+        width: 80vw;
+        height: 10vh;
+        min-height: 160px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        padding: 8% 0%;
+        justify-content: space-around;
+    }
+    card-1 div{
+        width: 50%;
+    }
+    .card-1 .img-container{
+        width:50%;
+        border-radius: 0;
+    }
+    .rating-container{
+        width:70%;
+        margin-left: 15%;
+    }
+    .rating-container img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

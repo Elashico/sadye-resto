@@ -1,0 +1,21 @@
+.card3-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 16px; /* Add some padding */
+}
+
+.card3-image img {
+    width: 80px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+.card3-text {
+    margin-left: 16px; /* Space between image and text */
+}
+
+
+.card3-text p {
+    margin: 4px 0 0; /* Add some margin for the paragraph */
+    color: #666; /* Optional: Change text color */
+}

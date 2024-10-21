@@ -1,0 +1,122 @@
+.flavor-div{
+    margin: 7% 0 0 0;
+    position: relative; 
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.rectangle-container{
+    overflow: hidden;
+    width: 50vw;
+    height: 30vh;
+    align-items: center;
+}
+
+.rectangle-1, .rectangle-2, .rectangle-3{
+    position: absolute !important;
+    width: 25vw;
+    height: 60vh;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Rectangle 1: Higher and to the left */
+.rectangle-1 {
+    background: var(--primary-color);
+    z-index: 1;
+}
+
+/* Rectangle 2: Lower and to the right */
+.rectangle-2 {
+    background: var(--accent-color);
+    margin: 10vh;
+    z-index: 2;
+}
+
+/* Rectangle 3: Centered and with an image */
+.rectangle-3 {
+    z-index: 3; /* Center horizontally */
+    margin: 5vh;
+}
+
+/* Ensuring the image inside Rectangle 3 fills the container properly */
+.rectangle-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area while keeping aspect ratio */
+}
+
+.text-container{
+    width: 60vw;
+    height: 30vh;
+}
+
+.text-container h2{
+    font-size: 1.8rem;
+    margin-top: 1.2vh;
+    font-weight: 500;
+}
+
+.text-container ul{
+    margin: 3vh 0 4vh 0;
+}
+
+.text-container ul li {
+    display: flex;
+    align-items: center; 
+    font-size: 1.2rem;
+    /* margin-bottom: 1vh; */
+    padding-left: 0; 
+}
+
+.text-container ul li svg {
+    margin-right: 1vw; 
+    width: 2.3rem;
+    height: 2.3rem;
+    color: var(--accent-color);
+}
+
+.flavor-div-2{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flavor-columns{
+    margin: 7% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 850px){
+    .flavor-div{
+        height: fit-content;
+    }
+    .text-container{
+        width: 80vw;
+        height: fit-content;
+    }
+    .rectangle-container{
+        display:none;
+    }
+
+}
+@media (max-width: 1100px){
+    .flavor-div-2{
+        margin-top:8vh;
+        margin-bottom: 5vh;
+    }
+    .flavor-columns{
+        display: flex;
+        flex-direction: column;
+    }
+    #coffee-pic{
+        display:none;
+    }
+}
+

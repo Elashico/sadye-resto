@@ -1,0 +1,83 @@
+.div-order{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color-dark);
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.div-order::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/foods/top-view-table-full-food.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+.div-order * {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the image */
+}
+
+.div-order h1{
+    color: var(--lighter);
+}
+.div-instruction{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    gap: 8vw;
+}
+.div-instruction section{
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /* Allow sections to grow and maximize space */
+    flex-basis: 120px; /* Ensure sections have a minimum width */
+    max-width: 10%; /* Limit section width to avoid too large sections */
+    margin: 10px 0; /* Add vertical space between rows */
+}
+.div-instruction section svg{
+    height: 128px;
+}
+.div-instruction h3{
+    font-size: 1.2rem;
+    margin-top: 10%;
+    color: var(--lighter);
+}
+
+@media (max-width: 750px) {
+    .div-order{
+        text-align: center;
+    }
+    .div-instruction section svg{
+        height: 70px;
+    }
+    .div-instruction {
+        display: flex;
+        flex-direction:column;
+        gap: .01vh;
+    }
+    .div-instruction section{
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        gap:1vw;
+        max-width: 100%;
+        margin: 2px 0;
+    }
+    .div-instruction h3{
+        margin-left: 2vw;
+        padding-bottom: 2rem;
+    }
+}

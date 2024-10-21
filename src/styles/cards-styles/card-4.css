@@ -1,0 +1,78 @@
+/* Container for the whole menu item */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Allow full width */
+    /* margin: 20px auto; */
+    padding: 15px 10px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    text-align: center;
+}
+
+/* Image container and styling */
+.menu-image-container {
+    width: 100%;               /* Full width of the parent */
+    max-width: 300px;         /* Optional: Set a maximum width for larger screens */
+    max-height: 227.813px;        /* Fixed height for consistency */
+    overflow: hidden;         /* Ensure no overflow occurs */
+}
+
+.menu-image {
+    width: 100%;              /* Take full width of the container */
+    height: 100%;             /* Take full height of the container */
+    object-fit: cover;        /* Maintain aspect ratio while filling the container */
+    display: block;           /* Remove any inline spacing issues */
+}
+
+
+/* Title and Price should be in one line */
+.menu-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Match with image max-width */
+    margin-top: 10px;
+}
+
+/* Title and price styling */
+.menu-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+    padding-right: 20px;
+    color: var(--lighter);
+    font-family: 'Playfair Display', serif;
+    white-space: nowrap;             /* Prevent text from wrapping */
+    overflow: hidden;                /* Hide any overflow text */
+    text-overflow: ellipsis;
+}
+
+.menu-price {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 8px;
+    color: var(--lighter);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    white-space: nowrap; 
+}
+
+/* Text/Description styling */
+.menu-description {
+    max-width: 300px; /* Keep text width consistent with image and info */
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 200;
+    color: var(--lighter);
+    display: -webkit-box;           /* Use flexbox for the text container */
+    -webkit-box-orient: vertical;   /* Set the orientation to vertical */
+    overflow: hidden;               /* Hide overflow text */
+    -webkit-line-clamp: 2;          /* Limit to two lines */
+    line-clamp: 2; 
+}
+

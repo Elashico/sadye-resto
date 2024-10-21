@@ -1,0 +1,126 @@
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--primary-color);
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    /* overflow-y: hidden; */
+}
+.logo-header{
+  display: flex;
+  align-items: center;
+}
+.logo-header h1{
+  font-size: 2rem;
+  width: 230px;
+  margin-left: 1vw;
+  color: var(--lighter);
+}
+.logo-header img{
+  height: 5rem;
+  width: auto;
+  cursor: pointer;
+}
+.default-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.default-nav a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--lighter);
+  padding: 1rem 1.5rem;
+  font-weight: 100;
+  transition: ease .3s;
+}
+.default-nav a:hover{
+  background-color: var(--accent-color-fade);
+  border-radius: 5px;
+  transition: ease .3s;
+}
+header .btn-style{
+  font-size: 1rem;
+}
+
+/* for responisve */
+#baby-come{
+  display: flex;
+  justify-content:space-between;
+  gap: 2vw;
+  align-items: center;
+}
+.dropdown-nav {
+  height: 0;
+  opacity: 0; 
+  visibility: hidden; 
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 30vw;
+  background-color: var(--accent-color-fade);
+  border-radius: 0 0 20px 20px;
+  text-align: end;
+  overflow: hidden; 
+  transition: height 0.2s ease, opacity 0.2s ease, visibility 0s 0.2s;
+}
+
+.dropdown-nav.open {
+  height: auto; 
+  opacity: 1;
+  visibility: visible; 
+  transition: height 0.2s ease, opacity 0.2s ease; 
+}
+.dropdown-nav nav{
+  display: flex;
+  flex-direction: column;
+  transition: ease .2s;
+}
+.dropdown-nav a{
+  padding: 1rem 1rem;
+  width: 100%;
+  color: var(--lighter);
+  transition: ease .2s;
+}
+.dropdown-nav a:hover{
+  background-color: var(--primary-color);
+}
+
+#baby-come-back{
+  display:none;
+  font-size: .9rem;
+}
+
+.fa-icon{
+  font-size: 1.5rem;
+  color: var(--lighter);
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px){
+  .default-nav, header .btn-style{
+    display:none;
+  }
+  #baby-come-back{
+    display: block;
+  }
+  .fa-icon{
+    display: block;
+  }
+  .dropdown-nav{
+    display: block;
+  }
+  .dropdown-nav a{
+    text-decoration: none;
+  }
+  #baby-come-back{
+    display: block;
+  }
+  
+}
