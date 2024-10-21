@@ -1,7 +1,7 @@
 import './styles/app.css'
 import Header from "./components/Header.jsx"
 import Landing from "./components/Landing.jsx";
-import Card1 from "./components/cards/card1.jsx"
+import Card1 from "./components/cards/Card1.jsx"
 import Card2 from "./components/cards/Card2.jsx"
 import Flavors from "./components/Flavors.jsx"
 import Order from "./components/Order.jsx"
