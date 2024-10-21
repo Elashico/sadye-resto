@@ -36,12 +36,10 @@ hr{
     gap: 3vw;
 }
 /* Media Queries for Smaller Screens */
-@media (min-width: 600px) and (max-width: 1000px){
+@media (max-width: 1000px){
     .popular-foods {
         padding: 0 8%;
         margin-top: -17vh;
-        /* height: 310px;
-        overflow: hidden; */
         padding: 0 3%;
         gap:7vw;
     }
@@ -62,6 +60,8 @@ hr{
         margin-top: 2vh;
     }
 }
+
+/* phone view card fix */
 @media (max-width: 481px){
     .popular-foods{
         margin-top: -25vh;
@@ -71,5 +71,8 @@ hr{
     }
     .menuu-container {
         gap:2px;
+    }
+    .menuu-container div:nth-last-of-type(n+5) {
+        display: none;
     }
 }
