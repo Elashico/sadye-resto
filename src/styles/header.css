@@ -134,5 +134,9 @@ header .btn-style{
     margin-left: 1vw;
     color: var(--lighter);
   }
+  .dropdown-nav{
+    top: 3rem;
+    width: 80vw;
+  }
   
 }
