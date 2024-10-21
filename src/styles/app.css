@@ -62,20 +62,7 @@ hr{
         margin-top: 2vh;
     }
 }
-@media (max-width: 450px) and (max-height:900px){
-    .popular-foods{
-        margin-top: -43vh;
-    }  
-    .menuu{
-        padding: 2%;
-    }
-    .menuu-container {
-        gap:2px;
-    }
-
-}
-
-@media (max-width: 400px) and (max-height: 700px){
+@media (max-width: 481px){
     .popular-foods{
         margin-top: -30vh;
     }
